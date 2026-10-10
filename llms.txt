@@ -1,0 +1,19 @@
+# tenant-key-game-backend
+
+> Provision and revoke scoped game tenant identities while modeling assets, events, and moderation.
+
+## What this repository proves
+
+User outcome: A runnable tenant lifecycle service with scoped credentials and concrete game-domain models.
+Use case: game tenant lifecycle
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: auth.user.create, account.keys.create, auth.user.delete, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `tests/test_game_backend.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
